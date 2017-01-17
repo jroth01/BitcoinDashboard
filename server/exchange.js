@@ -5,7 +5,7 @@ var exchange = require('blockchain.info/exchange');
 module.exports = function(app){
 
         /* GET ticker info */
-        app.get('/tickers.json', function(request, response) {
+        app.get('/getTicker.json', function(request, response) {
                 exchange.getTicker().then(function(data) {
                         console.log(data);
                         response.send(data);
@@ -15,7 +15,7 @@ module.exports = function(app){
         });
 
         /* GET converted value to BTC */
-        app.get('/tobtc.json', function(request, response) {
+        app.get('/toBTC.json', function(request, response) {
                 //var amount = request.query.amount.intValue();
                 //var currency = JSON.stringify(request.query.currency);
                 //console.log(request.query);

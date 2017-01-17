@@ -6,12 +6,13 @@ var validator = require('validator');
 var app = express();
 
 require('./exchange')(app);
+require('./blockexplorer')(app);
 
 /* Configuration */
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/public'));
-app.set('views', __dirname + '/views'); // views is directory for html pages
+app.set('views', __dirname + '/../client/views'); // views is directory for html pages
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 

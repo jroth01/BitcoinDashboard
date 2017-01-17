@@ -1,5 +1,5 @@
 {
-  "name": "BitcoinExplorer",
+  "name": "BitcoinDashboard",
   "version": "0.0.1",
   "dependencies": {
     "blockchain.info": "^2.5.0",
