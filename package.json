@@ -1,0 +1,12 @@
+{
+  "name": "BitcoinExplorer",
+  "version": "0.0.1",
+  "dependencies": {
+    "blockchain.info": "^2.5.0",
+    "body-parser": "latest",
+    "express": "latest",
+    "node": "latest",
+    "validator": "latest",
+    "ejs": "latest"
+  }
+}
