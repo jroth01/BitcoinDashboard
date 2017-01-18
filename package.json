@@ -2,11 +2,12 @@
   "name": "BitcoinDashboard",
   "version": "0.0.1",
   "dependencies": {
+    "angular-route": "latest",
     "blockchain.info": "^2.5.0",
     "body-parser": "latest",
+    "ejs": "latest",
     "express": "latest",
     "node": "latest",
-    "validator": "latest",
-    "ejs": "latest"
+    "validator": "latest"
   }
 }
