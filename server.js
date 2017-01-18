@@ -28,6 +28,10 @@ app.get('/mainCtrl.js', function(request, response) {
         response.sendFile(__dirname + '/client/js/mainCtrl.js');
 });
 
+app.get('/style.css', function(request, response) {
+        response.sendFile(__dirname + '/client/style/style.css');
+});
+
 /* Listen on port 3000 */
 app.set('port', (process.env.PORT || 3000));
 app.listen(app.get('port'), function() {
